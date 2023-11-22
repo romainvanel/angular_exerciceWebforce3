@@ -1,0 +1,9 @@
+<h1 class="my-5">
+    Nos pilotes
+</h1>
+
+<div class="badge badge-dark my-5">Données mise à jour : {{ driverUpdate | date:" EEEE dd MMMM yyyy H:mm" | uppercase }}</div>
+
+<div class="card-group justify-content-center">
+        <app-driver-item *ngFor="let oneDriver of drivers" [driver]="oneDriver"></app-driver-item>
+</div>

@@ -1,0 +1,9 @@
+<h1 class="my-5">
+    Nos véhicules
+</h1>
+<div class="badge badge-dark my-5">Données mise à jour : {{ carUpdate | date:" EEEE dd MMMM yyyy H:mm" | uppercase }}</div>
+
+<div class="card-group  justify-content-center">
+<app-car-item *ngFor="let oneCar of cars" [car]="oneCar"></app-car-item>
+</div>
+
